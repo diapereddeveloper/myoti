@@ -1,0 +1,46 @@
+:root {
+    --main-color: #8b32f2;
+    --yellow: #fffb17;
+    --dark-red: #911900;
+}
+
+html {
+    background-image: url(site/background.png);
+    color: #ffffff;
+    font-family: "KG Perfect Penmanship", cursive;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+hr {
+    border-top: 5px solid var(--main-color);
+}
+
+@font-face {
+    font-family: "Brush Script MT";
+    src:
+        local("Brush Script MT Italic"),
+        local("BrushScriptMT"),
+        url("site/fonts/BrushScriptMT.woff2") format("woff2"),
+        url("site/fonts/BrushScriptMT.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "KG Perfect Penmanship";
+    src:
+        local("KG Perfect Penmanship Regular"),
+        local("KGPerfectPenmanship-Regular"),
+        url("site/fonts/KGPerfectPenmanship-Regular.woff2") format("woff2"),
+        url("site/fonts/KGPerfectPenmanship-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

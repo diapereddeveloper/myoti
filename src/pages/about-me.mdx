@@ -1,0 +1,15 @@
+---
+title: About Me
+description: Get to know me better and things that I like and dislike.
+---
+import Layout from "../layouts/Layout.astro";
+import Box from "../components/Box.astro";
+
+
+<Layout title={frontmatter.title} description={frontmatter.description}>
+    <Box class="text-center">
+        # About Me
+
+        Get to know me better and things that I like and dislike.
+    </Box>
+</Layout>

@@ -1,0 +1,24 @@
+<div></div>
+
+<script>
+    document
+        .getElementById("setAgeConfirmation")
+        ?.addEventListener("click", function (event) {
+            event.preventDefault();
+            document.cookie = "ageConfirmed=true";
+            window.location.href = "/catalog";
+        });
+
+    if (
+        location.pathname == "/" &&
+        document.cookie.includes("ageConfirmed=true")
+    ) {
+        window.location.href = "/catalog";
+    }
+    if (
+        location.pathname != "/" &&
+        !document.cookie.includes("ageConfirmed=true")
+    ) {
+        window.location.href = "/";
+    }
+</script>

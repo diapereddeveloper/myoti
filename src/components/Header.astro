@@ -1,0 +1,49 @@
+<header>
+    <nav>
+        <ul>
+            <li><a href="catalog">YCH Catalog</a></li>
+            <li><a href="custom-commisions">Custom Commisions</a></li>
+            <li><a href="tos">T.O.S.</a></li>
+            <li><a href="about-me">About Me</a></li>
+            <li><a href="my-fursonas">My Furnsonas</a></li>
+            <li><a href="updates">Site Updates</a></li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0;
+        gap: 12px;
+    }
+
+    header nav ul li {
+        transition: transformation 150ms ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        background-image: url("site/tabs.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 150px;
+        height: 50px;
+    }
+
+    header nav ul li a {
+        text-align: center;
+        font-weight: bolder;
+        -webkit-text-stroke: 1px var(--dark-red);
+        color: var(--yellow);
+        text-decoration: none;
+    }
+
+    header nav ul li:hover,
+    header nav ul li:focus {
+        transform: scale(1.25);
+    }
+</style>

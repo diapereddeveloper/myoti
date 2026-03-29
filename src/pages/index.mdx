@@ -1,0 +1,17 @@
+---
+title: Myoti Age Check
+description: This site contains Adult content and is intended only for 18+ or older visitors.
+---
+
+import Empty from "../layouts/Empty.astro";
+import Box from "../components/Box.astro";
+
+<Empty title={frontmatter.title} description={frontmatter.description}>
+    <Box>
+        This site contains Adult content and is intended only for 18+ or older visitors.
+
+        If you are 18 or older, you may continue by acknowledging below statement.
+
+        <a href="#" id="setAgeConfirmation">I verify I am at least 18 years old!</a>
+    </Box>
+</Empty>
